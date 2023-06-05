@@ -41,6 +41,7 @@ public class TestBaseCommon {
             default:
                 throw new IllegalArgumentException("Runmode is not recognized");
         }
+        Configuration.timeout = 7000;
         Configuration.browserSize = null;
     }
 
