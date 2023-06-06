@@ -3,6 +3,7 @@ package tests;
 import components.ScreensMenuComponent;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import screens.HelpScreen;
 import screens.MainScreen;
@@ -27,6 +28,7 @@ public class TuTuTests extends TestBaseCommon {
     }
 
     @Test
+    @DisplayName("На экране выбора пунктов назначения выбираются города")
     void testSelectingFromAndToCities() {
         String cityFrom = "Moscow";
         String cityTo = "Sochi";
@@ -38,6 +40,7 @@ public class TuTuTests extends TestBaseCommon {
 
 
     @Test
+    @DisplayName("На экране выбора маршрутов и гостиниц в английской локализации нет русских слов")
     void testHotelsAndTicketsLocalization() {
         String cityFrom = "Moscow";
         String cityTo = "Sochi";
@@ -50,12 +53,14 @@ public class TuTuTests extends TestBaseCommon {
 
 
     @Test
+    @DisplayName("Проверяем основные тексты элементов экрана Help")
     void checkingHelpScreenMenuItems() {
         screensMenuComponent.clickHelpButton();
         helpScreen.checkScreenMainMenuItems();
     }
 
     @Test
+    @DisplayName("Проверяем основные тексты элементов экрана Profile")
     void checkingProfileMenuItems() {
         screensMenuComponent.clickProfileButton();
         profileScreen.checkScreenMainMenuItems();
