@@ -76,13 +76,13 @@
 > <code>*EXECUTORS*</code> - отображает исполнителя текущей сборки (ссылка на сборку в Jenkins)
 
 <p align="center">
-  <img src="images/screenshots/allure_mobile00.PNG" alt="Allure Report" >
+  <img src="images/screenshots/allure_mobile00.png" alt="Allure Report" >
 </p>
 
 #### ✓ В разделе Behaviors тесты отображаются  сгруппироваными в многоуровневый список:
 
 <p align="center">
-  <img src="images/screenshots/allure_mobile01.PNG" alt="Allure Report">
+  <img src="images/screenshots/allure_mobile01.png" alt="Allure Report">
 </p>
 
 Описания тестов и шагов тестов создаётся автоматически, на основе аннотаций и степов, созданных в исходном коде.
